@@ -50,8 +50,18 @@ header {
   position: relative;
 }
 
+.projetos p {
+  margin-bottom: 7px;
+}
+
 .projeto-item:hover {
   background: #333;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .projeto-item .cta {
@@ -64,9 +74,6 @@ header {
   color: #999;
   opacity: 0.4;
   font-style: italic;
-  position: absolute;
-  bottom: 4px;
-  right: 10px;
 }
 
 footer {
