@@ -1,6 +1,5 @@
 // Definição dos projetos que serão exibidos no portfólio
 const projects = [
-  // Detalhes de cada projeto
   {
     title: "Gerador de Imagens com IA",
     description:
@@ -59,35 +58,30 @@ const portfolioContainer = document.getElementById("portfolio");
 projects.forEach((project) => {
   const card = document.createElement("div");
 
-  // Adiciona a classe de coluna para o layout responsivo
-  card.classList.add("col");
+  card.classList.add("col"); // Adiciona a classe de coluna para o layout responsivo
   card.innerHTML = `
-        <div class="card h-100">
-            <a href="${
-              project.link
-            }" target="_blank" class="text-decoration-none text-white">
-                <img src="${project.image}" class="card-img-top" alt="${
+      <div class="card h-100">
+        <a href="${
+          project.link
+        }" target="_blank" class="text-decoration-none text-white">
+          <img src="${project.image}" class="card-img-top" alt="${
     project.title
   }">
-                <div class="card-body">
-                    <h3 class="card-title">${project.title}</h3>
-                    <p class="card-text">${project.description}</p>
-                    <div class="d-flex justify-content-between">
-                        <button class="btn btn-primary">Ver Projeto</button>
-                        <button class="btn btn-outline-light">GitHub</button>
-                    </div>
-                </div>
-            </a>
-            <div class="card-footer">
-                <time datetime="${
-                  project.date
-                }" class="project-date">${new Date(
+          <div class="card-body">
+            <h3 class="card-title">${project.title}</h3>
+            <p class="card-text">${project.description}</p>
+            <div class="d-flex justify-content-between">
+              <button class="btn btn-primary">Ver Projeto</button>
+              <button class="btn btn-outline-light">GitHub</button>
+            </div>
+          </div>
+        </a>
+        <div class="card-footer">
+          <time datetime="${project.date}" class="project-date">${new Date(
     project.date
   ).toLocaleDateString()}</time>
-            </div>
         </div>
-    `;
+      </div>`;
 
-  // Adiciona o card ao contêiner do portfólio
-  portfolioContainer.appendChild(card);
+  portfolioContainer.appendChild(card); // Adiciona o card ao contêiner do portfólio
 });
