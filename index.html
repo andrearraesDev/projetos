@@ -2,14 +2,21 @@
 <html lang="pt-br">
 
 <head>
+    <!-- Metadados e título do site -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de André Lucas, desenvolvedor web. Veja meus projetos pessoais.">
+    <meta name="description" content="Portfólio de André Lucas, desenvolvedor web.">
     <title>Portfólio de André Lucas</title>
+
+    <!-- Links para Bootstrap (estilos) e Boxicons (ícones) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Estilos principais para a página e os cards -->
     <style>
         body {
+            background-color: #121212;
+            color: #fff;
             transition: background-color 0.3s, color 0.3s;
         }
 
@@ -83,255 +90,38 @@
     </style>
 </head>
 
-<body class="bg-dark text-white py-5">
+<body class="py-5">
 
+    <!-- Contêiner principal do portfólio -->
     <div class="container">
+
+        <!-- Cabeçalho com imagem de perfil e introdução -->
         <header class="text-center mb-4">
-            <figure>
-                <img src="https://img.freepik.com/fotos-premium/logotipo-de-avatar-de-jogo-de-desenho-animado-para-uma-marca-de-jogos_902820-469.jpg"
-                    alt="Foto de perfil de André Lucas" class="rounded-circle" style="width: 150px; height: 150px;">
-            </figure>
+            <img src="https://img.freepik.com/fotos-premium/logotipo-de-avatar-de-jogo-de-desenho-animado-para-uma-marca-de-jogos_902820-469.jpg"
+                alt="Foto de perfil de André Lucas" class="rounded-circle" style="width: 150px; height: 150px;">
             <h1>André Lucas</h1>
-            <p>Desenvolvedor em formação, aprendendo a criar soluções web eficientes e inovadoras.</p>
-            <p>Acompanhe meus projetos abaixo.</p>
+            <p>Desenvolvedor em formação, aprendendo a criar soluções web eficientes e inovadoras. Acompanhe meus
+                projetos abaixo.</p>
         </header>
 
-        <section class="projetos">
+        <!-- Seção do portfólio com os projetos -->
+        <section>
             <h2 class="text-center mb-4">Portfólio</h2>
-
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-
-                <!-- Projeto 1 - Gerador de Imagens com IA -->
-                <div class="col">
-                    <div class="card">
-                        <a href="https://andrearraesdev.github.io/-ai-image-generator/" target="_blank"
-                            class="text-decoration-none text-white">
-                            <img src="img/1.png" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h3 class="card-title">Gerador de Imagens com IA</h3>
-                                <p class="card-text">Este projeto utiliza uma API de Inteligência Artificial para criar
-                                    imagens a partir de descrições fornecidas pelo usuário. Desenvolvido com HTML, CSS e
-                                    JavaScript, o projeto é uma ferramenta interativa que explora o potencial da IA para
-                                    transformar texto em visuais únicos, promovendo aprendizado e inovação em
-                                    desenvolvimento web.</p>
-                                <div class="d-flex justify-content-between">
-                                    <button class="btn btn-primary">Ver Projeto</button>
-                                    <button class="btn btn-outline-light">Ver no GitHub</button>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="card-footer">
-                            <time datetime="2025-01-11" class="project-date">11/01/2025</time>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Projeto 2 - Burger.IO -->
-                <div class="col">
-                    <div class="card">
-                        <a href="https://andrearraesdev.github.io/burger-delivery/" target="_blank"
-                            class="text-decoration-none text-white">
-                            <img src="img/2.png" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h3 class="card-title">Burger.IO</h3>
-                                <p class="card-text">Burger.IO é uma plataforma para pedidos de hambúrgueres, combinando
-                                    praticidade e tecnologia PWA (Progressive Web App). Desenvolvido com HTML, CSS e
-                                    JavaScript, o projeto prioriza a experiência do usuário, oferecendo acesso rápido,
-                                    design responsivo e funcionalidades modernas para tornar as encomendas mais
-                                    eficientes e agradáveis.</p>
-                                <div class="d-flex justify-content-between">
-                                    <button class="btn btn-primary">Ver Projeto</button>
-                                    <button class="btn btn-outline-light">Ver no GitHub</button>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="card-footer">
-                            <time datetime="2025-01-07" class="project-date">07/01/2025</time>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Projeto 3 - Netflix UI com Tailwind CSS -->
-                <div class="col">
-                    <div class="card">
-                        <a href="https://andrearraesdev.github.io/netflix-UI-tailwind/home.html" target="_blank"
-                            class="text-decoration-none text-white">
-                            <img src="img/3.png" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h3 class="card-title">Projeto Netflix com Tailwind CSS</h3>
-                                <p class="card-text">Este projeto consiste em uma página de login e página inicial
-                                    inspirada no Netflix, desenvolvida com HTML5 e Tailwind CSS. A página inicial tem
-                                    fundo gradiente em tela cheia, navegação fixa com ícones e informações de filmes com
-                                    botões interativos.</p>
-                                <div class="d-flex justify-content-between">
-                                    <button class="btn btn-primary">Ver Projeto</button>
-                                    <button class="btn btn-outline-light">Ver no GitHub</button>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="card-footer">
-                            <time datetime="2025-01-03" class="project-date">03/01/2025</time>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Projeto 4 - Blog de Tecnologia e Inovação -->
-                <div class="col">
-                    <div class="card">
-                        <a href="https://andrearraesdev.github.io/tech-blog-tailwind/" target="_blank"
-                            class="text-decoration-none text-white">
-                            <img src="img/4.png" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h3 class="card-title">Blog de Tecnologia e Inovação</h3>
-                                <p class="card-text">Projeto de blog responsivo desenvolvido com HTML5 e Tailwind CSS.
-                                    Inclui navegação para seções como Início, Sobre, Notícias, Artigos e Contato. Com
-                                    imagens otimizadas e botões de ação. Com design de cores escuras para uma
-                                    experiência otimizada em dispositivos móveis e desktop.</p>
-                                <div class="d-flex justify-content-between">
-                                    <button class="btn btn-primary">Ver Projeto</button>
-                                    <button class="btn btn-outline-light">Ver no GitHub</button>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="card-footer">
-                            <time datetime="2024-12-28" class="project-date">28/12/2024</time>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Projeto 5 - Loja de Roupa com Bootstrap -->
-                <div class="col">
-                    <div class="card">
-                        <a href="https://andrearraesdev.github.io/fashion-store-bootstrap/" target="_blank"
-                            class="text-decoration-none text-white">
-                            <img src="img/5.png" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h3 class="card-title">Loja de Roupa com Bootstrap</h3>
-                                <p class="card-text">Este projeto é uma loja de roupas online desenvolvida com o
-                                    framework Bootstrap. Oferece design responsivo. A plataforma inclui navegação
-                                    eficiente, carrosséis de imagens, filtros de pesquisa e cards de produtos com
-                                    avaliações, preços e botões de ação. A integração com o Bootstrap proporciona uma
-                                    experiência fluida e visualmente atraente.</p>
-                                <div class="d-flex justify-content-between">
-                                    <button class="btn btn-primary">Ver Projeto</button>
-                                    <button class="btn btn-outline-light">Ver no GitHub</button>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="card-footer">
-                            <time datetime="2024-12-18" class="project-date">18/12/2024</time>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Projeto 6 - Portfólio com Layout Clean -->
-                <div class="col">
-                    <div class="card">
-                        <a href="https://andrearraesdev.github.io/portfolio-clean/" target="_blank"
-                            class="text-decoration-none text-white">
-                            <img src="img/6.png" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h3 class="card-title">Portfólio Clean</h3>
-                                <p class="card-text">Este projeto é um portfólio simples e clean, projetado para
-                                    destacar os projetos e habilidades de desenvolvedor. Com foco na experiência do
-                                    usuário, foi utilizado HTML5, CSS3 e um toque de JavaScript para animações suaves e
-                                    interatividade no carregamento da página.</p>
-                                <div class="d-flex justify-content-between">
-                                    <button class="btn btn-primary">Ver Projeto</button>
-                                    <button class="btn btn-outline-light">Ver no GitHub</button>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="card-footer">
-                            <time datetime="2024-12-10" class="project-date">10/12/2024</time>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Projeto 7 - Aplicação simples de lista de tarefas -->
-                <div class="col">
-                    <div class="card">
-                        <a href="https://andrearraesdev.github.io/To-Do-List/" target="_blank"
-                            class="text-decoration-none text-white">
-                            <img src="img/8.png" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h3 class="card-title">Lista de Tarefas Interativa</h3>
-                                <p class="card-text">Aplicação web responsiva construída com HTML, CSS e JavaScript. Ela
-                                    permite adicionar, marcar e
-                                    excluir tarefas, com dados salvos no "localStorage" para continuidade.</p>
-                                <div class="d-flex justify-content-between">
-                                    <button class="btn btn-primary">Ver Projeto</button>
-                                    <button class="btn btn-outline-light">Ver no GitHub</button>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="card-footer">
-                            <time datetime="2024-11-30" class="project-date">30/11/2024</time>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Projeto 8 - Blog criativo e divertido -->
-                <div class="col">
-                    <div class="card">
-                        <a href="https://andrearraesdev.github.io/blog-miauverso/" target="_blank"
-                            class="text-decoration-none text-white">
-                            <img src="img/9.png" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h3 class="card-title">Blog Miauverso</h3>
-                                <p class="card-text">Miauverso é um blog intergaláctico comandado por um gato
-                                    astronauta, explorando o cosmos com humor e
-                                    curiosidades felinas. Desenvolvido com HTML, CSS e JavaScript, o projeto foca no
-                                    aprendizado em
-                                    desenvolvimento web e na aplicação de soluções criativas.</p>
-                                <div class="d-flex justify-content-between">
-                                    <button class="btn btn-primary">Ver Projeto</button>
-                                    <button class="btn btn-outline-light">Ver no GitHub</button>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="card-footer">
-                            <time datetime="2024-11-29" class="project-date">29/11/2024</time>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Projeto 9 - Calculadora web simples -->
-                <div class="col">
-                    <div class="card">
-                        <a href="https://andrearraesdev.github.io/calculator/" target="_blank"
-                            class="text-decoration-none text-white">
-                            <img src="img/10.png" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h3 class="card-title">Calculadora Web Interativa</h3>
-                                <p class="card-text">Calculadora interativa em HTML, CSS e JavaScript, com operações
-                                    básicas e interface intuitiva,
-                                    proporcionando uma experiência de usuário eficiente.</p>
-                                <div class="d-flex justify-content-between">
-                                    <button class="btn btn-primary">Ver Projeto</button>
-                                    <button class="btn btn-outline-light">Ver no GitHub</button>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="card-footer">
-                            <time datetime="2024-11-24" class="project-date">24/11/2024</time>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
+            <div id="portfolio" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"></div>
         </section>
 
+        <!-- Rodapé com links para redes sociais -->
         <footer class="text-center mt-5">
-            <a href="#" class="text-white text-decoration-none">LinkedIn <i class='bx bxl-linkedin'></i></a>
-            <span class="mx-2 text-white">|</span>
-            <a href="#" class="text-white text-decoration-none">GitHub <i class='bx bxl-github'></i></a>
-            <span class="mx-2 text-white">|</span>
-            <a href="#" class="text-white text-decoration-none">Contato <i class='bx bx-envelope'></i></a>
+            <a href="#" class="text-white">LinkedIn <i class='bx bxl-linkedin'></i></a>
+            <span class="mx-2">|</span>
+            <a href="#" class="text-white">GitHub <i class='bx bxl-github'></i></a>
+            <span class="mx-2">|</span>
+            <a href="#" class="text-white">Contato <i class='bx bx-envelope'></i></a>
         </footer>
     </div>
 
+    <!-- Scripts -->
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
