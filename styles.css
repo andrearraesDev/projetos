@@ -1,0 +1,87 @@
+/* Estilos para o corpo da página */
+body {
+  background-color: #121212;
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilos para os cartões */
+.card {
+  background-color: #1c1c1c;
+  color: white;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Estilos para o corpo dos cartões */
+.card-body {
+  padding: 1.25rem;
+  flex-grow: 1;
+}
+
+/* Estilos para o rodapé dos cartões */
+.card-footer {
+  margin-top: auto;
+}
+
+/* Estilos no modo claro para os cartões */
+.bg-light-mode .card {
+  background-color: #f8f9fa;
+  color: black;
+}
+
+/* Estilos no modo claro para o corpo da página */
+.bg-light-mode body {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Estilos no modo claro para os links do rodapé */
+.bg-light-mode footer a {
+  color: #333;
+}
+
+/* Estilos ao passar o mouse sobre os links do rodapé no modo claro */
+.bg-light-mode footer a:hover {
+  color: #000;
+}
+
+/* Estilos para os botões no rodapé dos cartões */
+.card-footer .btn {
+  margin-right: 10px;
+}
+
+/* Estilos para a data dos projetos */
+.project-date {
+  font-size: 0.85rem;
+  color: #b0b0b0;
+  text-align: right;
+  margin-top: 10px;
+}
+
+/* Estilos flexíveis para o corpo dos cartões */
+.card-body .d-flex {
+  margin-top: auto;
+  justify-content: space-between;
+}
+
+/* Estilos para os botões no corpo dos cartões */
+.card-body .btn {
+  width: 48%;
+  margin-top: 10px;
+}
+
+/* Estilos para a imagem no topo dos cartões */
+.card-img-top {
+  object-fit: cover;
+  height: auto;
+}
+
+/* Estilos para a linha de cartões */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
