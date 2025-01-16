@@ -5,7 +5,7 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Estilos para os cartões */
+/* Estilos para os cards */
 .card {
   background-color: #1c1c1c;
   color: white;
@@ -16,18 +16,18 @@ body {
   height: 100%;
 }
 
-/* Estilos para o corpo dos cartões */
+/* Estilos para o corpo dos cards */
 .card-body {
   padding: 1.25rem;
   flex-grow: 1;
 }
 
-/* Estilos para o rodapé dos cartões */
+/* Estilos para o rodapé dos cards */
 .card-footer {
   margin-top: auto;
 }
 
-/* Estilos no modo claro para os cartões */
+/* Estilos no modo claro para os cards */
 .bg-light-mode .card {
   background-color: #f8f9fa;
   color: black;
@@ -49,7 +49,7 @@ body {
   color: #000;
 }
 
-/* Estilos para os botões no rodapé dos cartões */
+/* Estilos para os botões no rodapé dos cards */
 .card-footer .btn {
   margin-right: 10px;
 }
@@ -62,26 +62,46 @@ body {
   margin-top: 10px;
 }
 
-/* Estilos flexíveis para o corpo dos cartões */
+/* Estilos flexíveis para o corpo dos cards */
 .card-body .d-flex {
   margin-top: auto;
   justify-content: space-between;
 }
 
-/* Estilos para os botões no corpo dos cartões */
+/* Estilos para os botões no corpo dos cards */
 .card-body .btn {
   width: 48%;
   margin-top: 10px;
 }
 
-/* Estilos para a imagem no topo dos cartões */
+/* Estilos para a imagem no topo dos cards */
 .card-img-top {
   object-fit: cover;
   height: auto;
 }
 
-/* Estilos para a linha de cartões */
+/* Estilos para a linha de cards */
 .row {
   display: flex;
   flex-wrap: wrap;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .card h3 {
+    font-size: 1.5rem;
+  }
+
+  .card .card-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .card h3 {
+    font-size: 1rem;
+  }
 }
