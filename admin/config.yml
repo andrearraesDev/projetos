@@ -1,10 +1,12 @@
 backend:
-  name: github
-  repo: andrearraesDev/projetos # Seu repositório no GitHub
-  branch: main # A branch padrão do repositório
+  name: git-gateway
+  branch: main # Defina o branch onde seu conteúdo será armazenado
 
 media_folder: "img" # Pasta onde as imagens serão armazenadas
-public_folder: "/img" # Caminho público para acessar as imagens
+public_folder: "/img" # Caminho para as imagens públicas
+
+editor:
+  preview: false # Desabilita a visualização ao editar
 
 collections:
   - name: "projects"
