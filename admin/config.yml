@@ -1,12 +1,12 @@
 backend:
   name: github
-  repo: https://github.com/andrearraesDev/projetos
-media_folder: "img"  # Pasta onde as imagens serão armazenadas
+  repo: andrearraesDev/projetos # Use apenas o nome do usuário/repositório
+media_folder: "img" # Pasta onde as imagens serão armazenadas
 public_folder: "/img"
 collections:
   - name: "projects"
     label: "Projetos"
-    folder: "projects"  # Pasta onde os projetos serão armazenados
+    folder: "projects" # Pasta onde os projetos serão armazenados
     create: true
     fields:
       - { name: "title", label: "Título", widget: "string" }
