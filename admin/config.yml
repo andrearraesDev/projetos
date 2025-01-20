@@ -1,0 +1,16 @@
+backend:
+  name: github
+  repo: https://github.com/andrearraesDev/projetos
+media_folder: "img"  # Pasta onde as imagens serão armazenadas
+public_folder: "/img"
+collections:
+  - name: "projects"
+    label: "Projetos"
+    folder: "projects"  # Pasta onde os projetos serão armazenados
+    create: true
+    fields:
+      - { name: "title", label: "Título", widget: "string" }
+      - { name: "description", label: "Descrição", widget: "text" }
+      - { name: "image", label: "Imagem", widget: "image" }
+      - { name: "link", label: "Link", widget: "string" }
+      - { name: "date", label: "Data", widget: "datetime" }
