@@ -1,7 +1,5 @@
 backend:
   name: git-gateway
-  repo: andrearraesDev/projetos # Seu repositório no GitHub
-  branch: main # A branch padrão do repositório
 media_folder: "img" # Pasta onde as imagens serão armazenadas
 public_folder: "/img" # Caminho público para acessar as imagens
 
