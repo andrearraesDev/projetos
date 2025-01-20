@@ -1,16 +1,19 @@
 backend:
   name: github
-  repo: andrearraesDev/projetos # Use apenas o nome do usuário/repositório
+  repo: andrearraesDev/projetos # Seu repositório no GitHub
+  branch: main # A branch padrão do repositório
+
 media_folder: "img" # Pasta onde as imagens serão armazenadas
-public_folder: "/img"
+public_folder: "/img" # Caminho público para acessar as imagens
+
 collections:
   - name: "projects"
     label: "Projetos"
-    folder: "projects" # Pasta onde os projetos serão armazenados
-    create: true
+    folder: "projects" # Pasta onde os arquivos dos projetos serão armazenados
+    create: true # Permite criar novos projetos
     fields:
       - { name: "title", label: "Título", widget: "string" }
       - { name: "description", label: "Descrição", widget: "text" }
-      - { name: "image", label: "Imagem", widget: "image" }
+      - { name: "image", label: "Imagem", widget: "image" } # Widget para imagem
       - { name: "link", label: "Link", widget: "string" }
       - { name: "date", label: "Data", widget: "datetime" }
